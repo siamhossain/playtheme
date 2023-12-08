@@ -2,7 +2,7 @@
 <?php 
 
 /*
-    main template
+    search template
 */
 
 require_once FINBUZZ_INC_DIR.'/helper-functions.php';
@@ -36,8 +36,9 @@ require_once FINBUZZ_INC_DIR.'/helper-functions.php';
 
         <div class="test">
             <div class="container">
-                <h1><?php echo get_theme_mod('play_header_logo') ?></h1>
-
+                <div class="search-area">
+                    <h1 class="title"> <?php printf( __('Search result for: %s', 'playtheme'),  get_search_query() ); ?> </h1>
+                </div>  
             </div>
         </div>
 

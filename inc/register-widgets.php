@@ -19,7 +19,7 @@ function multiple_widget_init() {
         __('Main Sidebar', 'playtheme'),
         'sidebar-1',
         __('Widgets in this area will be shown on all posts and pages.', 'playtheme'), 
-        '<div id="%1$s" class="child_sidebar widget %2$s">',
+        '<div class="child_sidebar">',
         '</div>',
         '<h2 class="title">',
         '</h2>',

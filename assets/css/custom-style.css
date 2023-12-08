@@ -143,6 +143,19 @@ body {
 
 
 /*-------------------------
+    Archive   
+--------------------------*/
+.archive-area {
+    background-color: skyblue;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.archive-area .title {
+    color: rgb(246 0 82);
+    margin-bottom: 0;
+}
+
+/*-------------------------
     Sidebar   
 --------------------------*/
 .sidebar-wrapper {
@@ -232,4 +245,22 @@ body {
 
 #footer-section .copyright-area p {
     margin-bottom: 0;
+}
+
+
+/*-------------------------
+    404 Section   
+--------------------------*/
+
+
+.error-section {
+    padding: 120px 0;
+    background-color: rgb(252 245 246);
+}
+.error-section .go-home-btn {
+    background-color: rgb(246 0 82);;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
 }

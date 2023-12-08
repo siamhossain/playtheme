@@ -1,10 +1,5 @@
 
 <?php 
-
-/*
-    main template
-*/
-
 require_once FINBUZZ_INC_DIR.'/helper-functions.php';
 
 ?>
@@ -36,18 +31,20 @@ require_once FINBUZZ_INC_DIR.'/helper-functions.php';
 
         <div class="test">
             <div class="container">
+                <h1>Single Post</h1>
                 <h1><?php echo get_theme_mod('play_header_logo') ?></h1>
-
             </div>
         </div>
+        <!-- <h1>Test page</h1> -->
 
         <section class="blog-post-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <?php get_template_part('template-parts/blog-setup') ?>
+                        <?php get_template_part('template-parts/post-setup') ?>
+                        <?php comments_template(); ?>
+                        <h1>dfgsdfgsfgsfdg</h1>
                     </div>
-
                     <div class="col-md-3">
                         <div class="sidebar-wrapper">
                             <?php get_sidebar() ?>

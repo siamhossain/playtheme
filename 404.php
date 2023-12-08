@@ -7,6 +7,8 @@
 
 require_once FINBUZZ_INC_DIR.'/helper-functions.php';
 
+$play_error_img = FINBUZZ_IMG_URL . '404.png';
+
 ?>
 
 <?php get_header() ?>
@@ -34,23 +36,19 @@ require_once FINBUZZ_INC_DIR.'/helper-functions.php';
             </div>
         </header>
 
-        <div class="test">
-            <div class="container">
-                <h1><?php echo get_theme_mod('play_header_logo') ?></h1>
-
-            </div>
-        </div>
-
-        <section class="blog-post-section">
+        <section class="error-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
-                        <?php get_template_part('template-parts/blog-setup') ?>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="sidebar-wrapper">
-                            <?php get_sidebar() ?>
+                <div class="col-md-12">
+                        <div class="error-content-wrapper d-flex flex-column justify-content-center text-center">
+                            <h1 class="mb-4">404 Error Page!</h1>
+                            <div class="item-img">
+                                <img class="mb-4" src="<?php echo esc_url($play_error_img); ?>">
+                            </div>
+                            <div class="error-text-content">
+                                <h3 class="mb-4">Opss! Page not found ! </h3>
+                                <a href="<?php home_url() ?>" class="go-home-btn">Go To Home</a>
+                            </div>
                         </div>
                     </div>
                 </div>
